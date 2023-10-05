@@ -3,15 +3,27 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import zipfile
 
 #Data Gathering
+# Function to load CSV from a zip file
+def load_csv_from_zip(zip_path, csv_filename):
+    with zipfile.ZipFile(zip_path, 'r') as zip_file:
+        with zip_file.open(csv_filename) as csv_file:
+            df = pd.read_csv(csv_file)
+    return df
+
+# Path to the zip file and CSV file within the zip
+zip_path = 'data/geolocation_dataset.zip'
+csv_filename = 'geolocation_dataset.csv'
+
+# Load the geolocation data from the zip file
+geolocation_df = load_csv_from_zip(zip_path, csv_filename)
+
 #orders data
 orders_df=pd.read_csv("data\orders_dataset.csv")
 ##customers data
 customers_df=pd.read_csv("data\customers_dataset.csv")
-#geolocation data
-geolocation_df=pd.read_csv("data\geolocation_dataset.csv")
 #order items data
 ordered_items_df=pd.read_csv("data\order_items_dataset.csv")
 #seller data
