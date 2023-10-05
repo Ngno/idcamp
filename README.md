@@ -14,6 +14,11 @@ This is a Streamlit web application for analyzing e-commerce sales data. The app
 - [Support and Feedback](#support-and-feedback)
 - [License](#license)
 
+## Demo
+
+Check out the live demo of the app https://ecommerce-dashboard.streamlit.app/
+![Screenshot] [ecommerce dashboard - ss.PNG]
+
 ## Features
 
 - Visualize sales trends over time.
