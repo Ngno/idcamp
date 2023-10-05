@@ -21,21 +21,21 @@ csv_filename = 'geolocation_dataset.csv'
 geolocation_df = load_csv_from_zip(zip_path, csv_filename)
 
 #orders data
-orders_df=pd.read_csv("data\orders_dataset.csv")
+orders_df=pd.read_csv("data/orders_dataset.csv")
 ##customers data
-customers_df=pd.read_csv("data\customers_dataset.csv")
+customers_df=pd.read_csv("data/customers_dataset.csv")
 #order items data
-ordered_items_df=pd.read_csv("data\order_items_dataset.csv")
+ordered_items_df=pd.read_csv("data/order_items_dataset.csv")
 #seller data
-sellers_df=pd.read_csv("data\sellers_dataset.csv")
+sellers_df=pd.read_csv("data/sellers_dataset.csv")
 #item review data
-review_df=pd.read_csv("data\order_reviews_dataset.csv")
+review_df=pd.read_csv("data/order_reviews_dataset.csv")
 #payment data
-payment_df=pd.read_csv("data\order_payments_dataset.csv")
+payment_df=pd.read_csv("data/order_payments_dataset.csv")
 #products data
-products_df=pd.read_csv("data\products_dataset.csv")
+products_df=pd.read_csv("data/products_dataset.csv")
 #english category
-english_category_df=pd.read_csv("data\product_category_name_translation.csv")
+english_category_df=pd.read_csv("data/product_category_name_translation.csv")
 
 #DATA CLEANING
 #orders_df
